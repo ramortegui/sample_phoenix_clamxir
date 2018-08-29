@@ -6,8 +6,9 @@ Sample is a phoenix application to show how to use
 Clamav installed
 
 # Use
-  * Clone the repository `git clone https://github.com/ramortegui/clamxir.git`
-  * Go to the root of the application `cd sample`
+  * Clone the repository `git clone
+    https://github.com/ramortegui/sample_phoenix_clamxir.git`
+  * Go to the root of the application `cd sample_phoenix_clamxir`
   * Install dependencies `mix deps.get`
   * Start Phoenix endpoint `mix phx.server`
 
