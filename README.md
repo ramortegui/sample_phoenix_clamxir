@@ -1,18 +1,15 @@
 # Sample
+Sample is a phoenix application to show how to use
+[Clamxir](https://github.com/ramortegui/clamxir) with phoenix.
 
-To start your Phoenix server:
+# Requirements
+Clamav installed
 
-  * Install dependencies with `mix deps.get`
-  * Start Phoenix endpoint with `mix phx.server`
+# Use
+  * Clone the repository `git clone https://github.com/ramortegui/clamxir.git`
+  * Go to the root of the application `cd sample`
+  * Install dependencies `mix deps.get`
+  * Start Phoenix endpoint `mix phx.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+Now you can visit [`localhost:4000`](http://localhost:4000) from your browser and upload files.
+The applciation will only check if a file is safe and then is detroyed, please check `lib/sample_web/controller/page_controller.ex` to see how has been implemented.
