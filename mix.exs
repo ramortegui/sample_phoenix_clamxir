@@ -39,7 +39,7 @@ defmodule Sample.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:cowboy, "~> 1.0"},
-      {:clamxir, "~> 0.1.3"}
+      {:clamxir, "~> 0.1.4"}
     ]
   end
 end
