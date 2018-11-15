@@ -1,4 +1,2 @@
-<%= form_for @conn, "/upload", [multipart: true, as: :index], fn f -> %>
-  <%= file_input f, :file %>
-  <%= submit "Upload" %>
-<% end %>
+Hello <%= @name %>
+
