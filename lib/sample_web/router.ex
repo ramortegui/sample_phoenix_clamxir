@@ -7,6 +7,7 @@ defmodule SampleWeb.Router do
     plug :fetch_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug :assing_process_id
   end
 
   pipeline :api do
@@ -24,4 +25,9 @@ defmodule SampleWeb.Router do
   # scope "/api", SampleWeb do
   #   pipe_through :api
   # end
+
+  defp assing_process_id(conn, _params) do
+    Plug.Conn.assign(conn,:process_id, inspect self)
+    |> IO.inspect
+  end
 end
