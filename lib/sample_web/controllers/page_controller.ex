@@ -6,10 +6,9 @@ defmodule SampleWeb.PageController do
     render conn, "index.html"
   end
 
-  def upload(conn, params) do
+  def upload(conn, _params) do
     #process file
     conn
-    |> put_flash(:info,  "Created successfully")
     |> redirect(to: "/")
   end
 
@@ -20,13 +19,12 @@ defmodule SampleWeb.PageController do
         # Process the file and ...
         conn
         |> put_flash(:info,  "Created successfully")
-        |> redirect(to: "/")
       false ->
         conn
         |> put_status(503)
         |> put_flash(:error, "virus!!")
         |> render("index.html")
-        |> Plug.Conn.halt()
+        |> halt
     end
   end
 end
